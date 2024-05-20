@@ -1,15 +1,22 @@
+<!-- App.svelte -->
 <script>
-	import Appbar from "./components/Appbar.svelte"
-	export let name;
-</script>
+	import Topbar from './components/topbar.svelte'
+	import CreateTeam from './components/createTeam.svelte';
+	import CreateColleague from './components/createColleague.svelte';
 
-<style>
+	import Router from 'svelte-spa-router';
+	const routes = {
+		'/': Home,
+		'/'
 
-	h1 {
-		color : purple;
 	}
+  </script>
+  
 
-</style>
+  <style>
 
-<Appbar/>
-<h1>Hello {name}!</h1>
+  </style>
+  
+  <Topbar />
+  <CreateTeam/>
+  <CreateColleague/>
